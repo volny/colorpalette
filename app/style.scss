@@ -26,9 +26,7 @@ $primary-color: #ecf0f1;
   }
 }
 
-html, body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+html, body {
     font: 100% $font-stack;
     margin: 0;
     padding: 0;
@@ -139,8 +137,12 @@ dl, dd, ol, ul, figure {
   @include color-tile(#7f8c8d);
 }
 
-.btn {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+.confirmation {
+  position: absolute;
+  top: 40%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  color: #2c3e50;
+  font-size: 40px;
 }
+
