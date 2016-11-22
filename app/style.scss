@@ -1,0 +1,146 @@
+$font-stack: Montserrat, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$primary-color: #ecf0f1;
+
+@charset "utf-8";
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin transition-all() {
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    -o-transition: all .35s ease-out;
+    -ms-transition: all .35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+@mixin color-tile($color) {
+  background: $color;
+  @include transition-all;
+  &:hover,
+  &:focus {
+    background: lighten($color, 6%)
+  }
+}
+
+html, body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    font: 100% $font-stack;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+.color {
+  color: $primary-color;
+  position: relative;
+  display: block;
+  float: left;
+  width: 20%;
+  height: 25%;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.color footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 10px;
+}
+
+.color.turquoise {
+  @include color-tile(#1abc9c);
+}
+
+.color.green-sea {
+  @include color-tile(#16a085);
+}
+
+.color.emerland {
+  @include color-tile(#2ecc71);
+}
+
+.color.nephritis {
+  @include color-tile(#27ae60);
+}
+
+.color.peter-river {
+  @include color-tile(#3498db);
+}
+
+.color.belize-hole {
+  @include color-tile(#2980b9);
+}
+
+.color.amethyst {
+  @include color-tile(#9b59b6);
+}
+
+.color.wisteria {
+  @include color-tile(#8e44ad);
+}
+
+.color.wet-asphalt {
+  @include color-tile(#34495e);
+}
+
+.color.midnight-blue {
+  @include color-tile(#2c3e50);
+}
+
+.color.sun-flower {
+  @include color-tile(#f1c40f);
+}
+
+.color.orange {
+  @include color-tile(#f39c12);
+}
+
+.color.carrot {
+  @include color-tile(#e67e22);
+}
+
+.color.pumpkin {
+  @include color-tile(#d35400);
+}
+
+.color.alizarin {
+  @include color-tile(#e74c3c);
+}
+
+.color.pomegranate {
+  @include color-tile(#c0392b);
+}
+
+.color.clouds {
+  @include color-tile(#ecf0f1);
+  color: #bdc3c7
+}
+
+.color.silver {
+  @include color-tile(#bdc3c7);
+}
+
+.color.concrete {
+  @include color-tile(#95a5a6);
+}
+
+.color.asbestos {
+  @include color-tile(#7f8c8d);
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
