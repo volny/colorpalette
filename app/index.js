@@ -8,13 +8,11 @@ clipboard.on('success', (event) => {
     console.info('Text:', event.text);
     console.info('Trigger:', event.trigger);
 
-    const confirmation = document.createElement('p')
-    confirmation.className = 'confirmation'
-    confirmation.textContent = `copied ${event.text} to clipboard`
+    const confirmation = document.createElement('div')
+    confirmation.className = 'fullscreen'
+    confirmation.innerHTML = `<div class="inner animated tada"><p class="message">copied</p></div>`
     document.body.appendChild(confirmation)
-
-    window.setInterval(() => document.body.removeChild(confirmation), 600)
-
+    window.setInterval(() => document.body.removeChild(confirmation), 700)
     event.clearSelection();
 });
  
