@@ -1,6 +1,5 @@
 node_modules/
 npm-debug.log
 dist/
-package.json
-webpack.config.js
 .DS_Store
+

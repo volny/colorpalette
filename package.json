@@ -1,0 +1,46 @@
+{
+  "name": "es6-webpack-starter",
+  "version": "1.0.0",
+  "description": "A simple starter template to write vanilla ES6 applications",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/",
+    "build": "webpack",
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volny/ES6-webpack-starter.git"
+  },
+  "keywords": [
+    "ES6",
+    "webpack",
+    "SASS"
+  ],
+  "author": "Felix Volny <felix@volny.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volny/ES6-webpack-starter/issues"
+  },
+  "homepage": "https://github.com/volny/ES6-webpack-starter#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.24.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "clipboard": "^1.5.15"
+  }
+}
