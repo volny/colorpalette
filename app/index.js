@@ -12,7 +12,7 @@ clipboard.on('success', (event) => {
     confirmation.className = 'fullscreen'
     confirmation.innerHTML = `<div class="inner animated tada"><p class="message" style="color: ${event.text};">copied</p></div>`
     document.body.appendChild(confirmation)
-    window.setInterval(() => document.body.removeChild(confirmation), 700)
+    window.setTimeout(() => document.body.removeChild(confirmation), 700)
     event.clearSelection();
 });
  
