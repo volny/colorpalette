@@ -16,4 +16,3 @@ clipboard.on('error', (event) => {
     console.error('Action:', event.action);
     console.error('Trigger:', event.trigger);
 });
-
