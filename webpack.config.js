@@ -4,7 +4,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
+  favicon: 'favicon.ico',
 });
 
 var ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
@@ -17,7 +18,7 @@ module.exports = {
   entry: entrypoint,
   output: {
     path: __dirname + '/dist',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     loaders: [
@@ -26,14 +27,14 @@ module.exports = {
         include: __dirname + '/app',
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'stage-0']
+          presets: ['es2015', 'stage-0'],
         }
       },
       {
         test: /\.scss$/,
         include: __dirname + '/app',
-        loader: ExtractTextPlugin.extract('css!sass')
-      }
+        loader: ExtractTextPlugin.extract('css!sass'),
+      },
     ]
   },
   plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig]
