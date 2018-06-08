@@ -4,10 +4,6 @@ import Clipboard from 'clipboard'
 const clipboard = new Clipboard('.color')
 
 clipboard.on('success', (event) => {
-    console.info('Action:', event.action);
-    console.info('Text:', event.text);
-    console.info('Trigger:', event.trigger);
-
     const confirmation = document.createElement('div')
     confirmation.className = 'fullscreen'
     confirmation.innerHTML = `<div class="inner animated tada"><p class="message" style="color: ${event.text};">copied</p></div>`
