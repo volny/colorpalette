@@ -40,11 +40,18 @@ html, body {
   position: relative;
   display: block;
   float: left;
-  width: 20%;
-  height: 25%;
   cursor: pointer;
   margin: 0;
   padding: 0;
+  width: 25%;
+  height: 20%;
+}
+
+@media screen and (min-device-width: 700px) and (min-width: 700px) {
+  .color {
+    width: 20%;
+    height: 25%;
+  }
 }
 
 .color footer {

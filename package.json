@@ -1,5 +1,5 @@
 {
-  "name": "Flat Colors",
+  "name": "flat-colors",
   "version": "1.1.0",
   "description": "Opinionated colorpicker for your next project",
   "main": "webpack.config.js",
@@ -7,13 +7,12 @@
     "clean": "rm -rf dist/",
     "build": "webpack",
     "production": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --port 3003"
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:volny/colorpalette.git"
+    "url": "git@github.com:volny/colorpalette.git"
   },
-  "keywords": [],
   "author": "Felix Volny <felix@volny.co>",
   "homepage": "https://www.volny.co/colors",
   "devDependencies": {
